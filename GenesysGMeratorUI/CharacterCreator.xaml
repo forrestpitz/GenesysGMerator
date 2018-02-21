@@ -62,7 +62,7 @@
             <ColumnDefinition Width="200" />
         </Grid.ColumnDefinitions>
 
-        <Button Grid.Column="5" Grid.Row="0" Click="Save_Click">Save</Button>
+        <Button Grid.Column="5" Grid.Row="0" Click="Save_Click" Background="#284665" Foreground="White" FontSize="15" FontWeight="Bold">SAVE</Button>
         <Label Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" FontWeight="Bold" FontSize="20">Total XP</Label>
         <Label Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" Name="XPTotal"></Label>
 
@@ -71,18 +71,18 @@
 
         <Label HorizontalAlignment="Left" Grid.Column="0" Grid.Row="0" VerticalAlignment="Bottom" FontWeight="Bold">Player Name</Label>
         <TextBox HorizontalAlignment="Left" Grid.Column="1" Grid.Row="0" VerticalAlignment="Bottom" Height="25" Width="150" TextChanged="PlayerName_TextChanged"/>
-        <Button Grid.Column="2" Grid.Row="1" Width="150" HorizontalAlignment="Left" FontWeight="Bold" Click="GenerateName_Click">Generate Name</Button>
+        <Button Grid.Column="2" Grid.Row="1" Width="150" HorizontalAlignment="Left" FontWeight="Bold" Click="GenerateName_Click" Background="#284665" Foreground="White" FontSize="15">GENERATE NAME</Button>
 
         <Label HorizontalAlignment="Left" Grid.Column="0" Grid.Row="1" FontWeight="Bold">Character Name</Label>
         <TextBox HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" Width="150" Name="CharacterNameTB" TextChanged="CharacterName_TextChanged"/>
 
         <Label HorizontalAlignment="Left" Grid.Column="0" Grid.Row="2" FontWeight="Bold">Archetype</Label>
         <Label HorizontalAlignment="Left" Name="Archetype" Grid.Column="1" Grid.Row="2" Width="150">Step 1: Select Archetype</Label>
-        <Button HorizontalAlignment="Left" Grid.Column="2" Grid.Row="2" Width="150" Click="ArchetypeSelector_Click" FontWeight="Bold">Pick Archetype</Button>
+        <Button HorizontalAlignment="Left" Grid.Column="2" Grid.Row="2" Width="150" Click="ArchetypeSelector_Click" FontWeight="Bold" Background="#284665" Foreground="White" FontSize="15">PICK ARCHETYPE</Button>
 
         <Label HorizontalAlignment="Left" Grid.Column="0" Grid.Row="3" FontWeight="Bold">Career</Label>
         <Label HorizontalAlignment="Left" Name="Career" Grid.Column="1" Grid.Row="3" Width="150">Step 2: Select Career</Label>
-        <Button Name="Career_Btn" IsEnabled="False" HorizontalAlignment="Left" Grid.Column="2" Grid.Row="3" Width="150" Click="CareerSelector_Click" FontWeight="Bold">Pick Career</Button>
+        <Button Name="Career_Btn" IsEnabled="False" HorizontalAlignment="Left" Grid.Column="2" Grid.Row="3" Width="150" Click="CareerSelector_Click" FontWeight="Bold" Background="#284665" Foreground="White" FontSize="15">PICK CAREER</Button>
 
         <Label HorizontalAlignment="Center" Grid.ColumnSpan="6" Grid.Row="4" FontWeight="Bold">Architypes</Label>
         <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" Grid.ColumnSpan="6">
@@ -92,18 +92,18 @@
             </Grid>
             <Grid>
                 <Image Margin="10,0" HorizontalAlignment="Center"  Source="Symbols\wounds.png" Height="75"/>
-                <Label Name="Wound_Threshold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="40,0,0,0" FontSize="30" FontWeight="Bold">0</Label>
-                <Label Name="Wound_Current" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,40,0" FontSize="30" FontWeight="Bold">0</Label>
+                <Label Name="Wound_Threshold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30" FontWeight="Bold">0</Label>
+                <Label Name="Wound_Current" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,50,0" FontSize="30" FontWeight="Bold">0</Label>
             </Grid>
             <Grid>
                 <Image Margin="10,0" HorizontalAlignment="Center"  Source="Symbols\strain.png" Height="75"/>
-                <Label Name="Strain_Threshold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="40,0,0,0" FontSize="30" FontWeight="Bold">0</Label>
-                <Label Name="Strain_Current" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,40,0" FontSize="30" FontWeight="Bold">0</Label>
+                <Label Name="Strain_Threshold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30" FontWeight="Bold">0</Label>
+                <Label Name="Strain_Current" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,50,0" FontSize="30" FontWeight="Bold">0</Label>
             </Grid>
             <Grid>
                 <Image Margin="10,0" HorizontalAlignment="Center"  Source="Symbols\defense.png" Height="75"/>
-                <Label Name="Ranged_Defense" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="40,0,0,0" FontSize="30" FontWeight="Bold">0</Label>
-                <Label Name="Melee_Defense" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,40,0" FontSize="30" FontWeight="Bold">0</Label>
+                <Label Name="Ranged_Defense" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30" FontWeight="Bold">0</Label>
+                <Label Name="Melee_Defense" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,50,0" FontSize="30" FontWeight="Bold">0</Label>
             </Grid>
         </StackPanel>
 
@@ -113,37 +113,43 @@
                 <Grid>
                     <Image Source="Symbols\Characteristic.png" Width="100"/>
                     <Label Name="Brawn" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,40" FontSize="30" FontWeight="Bold">2</Label>
+                    <Label Foreground="White" FontSize="15" Margin="0,65,0,0" HorizontalAlignment="Center">BRAWN</Label>
                 </Grid>
             </Button>
             <Button Margin="20,0" IsEnabled="False" Style="{DynamicResource NoChromeButton}" Name="Agility_Button" Click="Characteristic_Up"  MouseRightButtonUp="Characteristic_Down" Grid.Column="1" Grid.Row="7">
                 <Grid>
-                
-                        <Image Source="Symbols\Characteristic.png" Width="100"/>
+                    <Image Source="Symbols\Characteristic.png" Width="100"/>
                     <Label Name="Agility" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,40" FontSize="30" FontWeight="Bold">2</Label>
+                    <Label Foreground="White" FontSize="15" Margin="0,65,0,0" HorizontalAlignment="Center">AGILITY</Label>
                 </Grid>
             </Button>
             <Button Margin="20,0" IsEnabled="False" Style="{DynamicResource NoChromeButton}" Name="Intelect_Button" Click="Characteristic_Up"  MouseRightButtonUp="Characteristic_Down"  Grid.Column="2" Grid.Row="7">
                 <Grid>
                     <Image Source="Symbols\Characteristic.png" Width="100"/>
                     <Label Name="Intelect" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,40" FontSize="30" FontWeight="Bold">2</Label>
+                    <Label Foreground="White" FontSize="15" Margin="0,65,0,0" HorizontalAlignment="Center">INTELECT</Label>
                 </Grid>
             </Button>
             <Button Margin="20,0" IsEnabled="False" Style="{DynamicResource NoChromeButton}" Name="Cunning_Button" Click="Characteristic_Up"  MouseRightButtonUp="Characteristic_Down"  Grid.Column="3" Grid.Row="7">
                 <Grid>
                     <Image Source="Symbols\Characteristic.png" Width="100"/>
                 <Label Name="Cunning" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,40" FontSize="30" FontWeight="Bold">2</Label>
+
+                    <Label Foreground="White" FontSize="15" Margin="0,65,0,0" HorizontalAlignment="Center">CUNNING</Label>
                 </Grid>
             </Button>
             <Button Margin="20,0" IsEnabled="False" Style="{DynamicResource NoChromeButton}" Name="Willpower_Button" Click="Characteristic_Up"  MouseRightButtonUp="Characteristic_Down"  Grid.Column="4" Grid.Row="7">
                 <Grid>
                     <Image Source="Symbols\Characteristic.png" Width="100"/>
-                <Label Name="Willpower" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,40" FontSize="30" FontWeight="Bold">2</Label>
+                    <Label Name="Willpower" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,40" FontSize="30" FontWeight="Bold">2</Label>
+                    <Label Foreground="White" FontSize="15" Margin="0,65,0,0" HorizontalAlignment="Center">WILLPOWER</Label>
                 </Grid>
             </Button>
             <Button Margin="20,0" IsEnabled="False" Style="{DynamicResource NoChromeButton}" Name="Presence_Button" Click="Characteristic_Up"  MouseRightButtonUp="Characteristic_Down"  Grid.Column="5" Grid.Row="7">
                 <Grid>
                     <Image Source="Symbols\Characteristic.png" Width="100"/>
                     <Label Name="Presence" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,40" FontSize="30" FontWeight="Bold">2</Label>
+                    <Label Foreground="White" FontSize="15" Margin="0,65,0,0" HorizontalAlignment="Center">PRESENSE</Label>
                 </Grid>
             </Button>
         </StackPanel>

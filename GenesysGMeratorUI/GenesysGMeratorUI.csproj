@@ -182,11 +182,7 @@
     <Resource Include="Symbols\architypes.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Symbols\defense.png" />
     <Resource Include="Symbols\Encomberence.png" />
-    <Resource Include="Symbols\soak.png" />
-    <Resource Include="Symbols\strain.png" />
-    <Resource Include="Symbols\Wounds.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Symbols\skill_0.png" />
@@ -195,6 +191,12 @@
     <Resource Include="Symbols\skill_3.png" />
     <Resource Include="Symbols\skill_4.png" />
     <Resource Include="Symbols\skill_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Symbols\defense.png" />
+    <Resource Include="Symbols\soak.png" />
+    <Resource Include="Symbols\strain.png" />
+    <Resource Include="Symbols\Wounds.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

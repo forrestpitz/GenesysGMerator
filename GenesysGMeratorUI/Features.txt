@@ -1,0 +1,6 @@
+﻿1. Create flavor for other settings
+2. Create more flavor in general
+3. Auto gen flavor based on selected genre
+4. More around campaign mangement
+5. Load character
+6. Adjust current strain/wounds
