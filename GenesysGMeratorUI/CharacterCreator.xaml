@@ -1,0 +1,116 @@
+﻿<Window x:Class="GenesysGMeratorUI.CharacterCreator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GenesysGMeratorUI"
+        mc:Ignorable="d"
+        Title="Character Creator" Height="800" Width="1200"
+        Closing="Window_Closing">
+    <Window.Resources>
+        <Style x:Key="NoChromeButton" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid x:Name="Chrome" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="#ADADAD"/>
+                                <Setter Property="Opacity" TargetName="Chrome" Value="0.5"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="200" />
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Column="5" Grid.Row="0" Click="Save_Click">Save</Button>
+        <Label Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" FontWeight="Bold" FontSize="20">Total XP</Label>
+        <Label Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" Name="XPTotal"></Label>
+
+        <Label Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" FontWeight="Bold" FontSize="20">XP Balance</Label>
+        <Label Grid.Column="4" Grid.Row="1" HorizontalAlignment="Center" Name="XPBalance"></Label>
+
+        <Label HorizontalAlignment="Left" Grid.Column="0" Grid.Row="0" VerticalAlignment="Bottom" FontWeight="Bold">Player Name</Label>
+        <TextBox HorizontalAlignment="Left" Grid.Column="1" Grid.Row="0" VerticalAlignment="Bottom" Height="25" Width="150" TextChanged="PlayerName_TextChanged"/>
+        <Button Grid.Column="2" Grid.Row="1" Width="150" HorizontalAlignment="Left" FontWeight="Bold">Generate Name</Button>
+
+        <Label HorizontalAlignment="Left" Grid.Column="0" Grid.Row="1" FontWeight="Bold">Character Name</Label>
+        <TextBox HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" Width="150" TextChanged="CharacterName_TextChanged"/>
+
+        <Label HorizontalAlignment="Left" Grid.Column="0" Grid.Row="2" FontWeight="Bold">Archetype</Label>
+        <Label HorizontalAlignment="Left" Name="Archetype" Grid.Column="1" Grid.Row="2" Width="150">Step 1: Select Archetype</Label>
+        <Button HorizontalAlignment="Left" Grid.Column="2" Grid.Row="2" Width="150" Click="ArchetypeSelector_Click" FontWeight="Bold">Pick Archetype</Button>
+
+        <Label HorizontalAlignment="Left" Grid.Column="0" Grid.Row="3" FontWeight="Bold">Career</Label>
+        <Label HorizontalAlignment="Left" Name="Career" Grid.Column="1" Grid.Row="3" Width="150">Step 2: Select Career</Label>
+        <Button Name="Career_Btn" IsEnabled="False" HorizontalAlignment="Left" Grid.Column="2" Grid.Row="3" Width="150" Click="CareerSelector_Click" FontWeight="Bold">Pick Career</Button>
+
+        <Label HorizontalAlignment="Center" Grid.ColumnSpan="6" Grid.Row="4" FontWeight="Bold">Architypes</Label>
+        <Image Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" Source="Symbols\soak.png" Height="75"/>
+        <Image Grid.Column="1" Grid.Row="5" HorizontalAlignment="Center"  Source="Symbols\wounds.png" Height="75"/>
+        <Image Grid.Column="2" Grid.Row="5" HorizontalAlignment="Center"  Source="Symbols\strain.png" Height="75"/>
+        <Image Grid.Column="3" Grid.Row="5" HorizontalAlignment="Center"  Source="Symbols\defense.png" Height="75"/>
+        <Image Grid.Column="4" Grid.Row="5" HorizontalAlignment="Center"  Source="Symbols\Encomberence.png" Height="75"/>
+
+        <Label HorizontalAlignment="Center" Grid.ColumnSpan="6" Grid.Row="6" FontWeight="Bold">Characteristics</Label>
+        <Button IsEnabled="False" Style="{DynamicResource NoChromeButton}" Name="Brawn_Button" Click="Characteristic_Up"  MouseRightButtonUp="Characteristic_Down" Grid.Column="0" Grid.Row="7">
+            <Image Name="Brawn" Source="Symbols\2.png" Width="100"/>
+        </Button>
+        <Button IsEnabled="False" Style="{DynamicResource NoChromeButton}" Name="Agility_Button" Click="Characteristic_Up"  MouseRightButtonUp="Characteristic_Down" Grid.Column="1" Grid.Row="7">
+            <Image Name="Agility" Source="Symbols\2.png" Width="100"/>
+        </Button>
+        <Button IsEnabled="False" Style="{DynamicResource NoChromeButton}" Name="Intelect_Button" Click="Characteristic_Up"  MouseRightButtonUp="Characteristic_Down"  Grid.Column="2" Grid.Row="7">
+            <Image Name="Intelect" Source="Symbols\2.png" Width="100"/>
+        </Button>
+        <Button IsEnabled="False" Style="{DynamicResource NoChromeButton}" Name="Cunning_Button" Click="Characteristic_Up"  MouseRightButtonUp="Characteristic_Down"  Grid.Column="3" Grid.Row="7">
+            <Image Name="Cunning" Source="Symbols\2.png" Width="100"/>
+        </Button>
+        <Button IsEnabled="False" Style="{DynamicResource NoChromeButton}" Name="Willpower_Button" Click="Characteristic_Up"  MouseRightButtonUp="Characteristic_Down"  Grid.Column="4" Grid.Row="7">
+            <Image Name="Willpower" Source="Symbols\2.png" Width="100"/>
+        </Button>
+        <Button IsEnabled="False" Style="{DynamicResource NoChromeButton}" Name="Presence_Button" Click="Characteristic_Up"  MouseRightButtonUp="Characteristic_Down"  Grid.Column="5" Grid.Row="7">
+            <Image Name="Presence" Source="Symbols\2.png" Width="100"/>
+        </Button>
+
+        <Label HorizontalAlignment="Center" Grid.ColumnSpan="6" Grid.Row="8" FontWeight="Bold">Skills</Label>
+    </Grid>
+</Window>

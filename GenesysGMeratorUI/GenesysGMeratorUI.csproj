@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{123B5AC3-4138-4D12-8C7F-7C93FE6A0D72}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GenesysGMeratorUI</RootNamespace>
+    <AssemblyName>GenesysGMeratorUI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ArchetypeSelector.xaml.cs">
+      <DependentUpon>ArchetypeSelector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CareerSelector.xaml.cs">
+      <DependentUpon>CareerSelector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CharacterCreator.xaml.cs">
+      <DependentUpon>CharacterCreator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DiceRoller.xaml.cs">
+      <DependentUpon>DiceRoller.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.xaml.cs">
+      <DependentUpon>Splash.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ArchetypeSelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CareerSelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CharacterCreator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DiceRoller.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GM.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GM.xaml.cs">
+      <DependentUpon>GM.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Splash.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Symbols\ability.png" />
+    <Resource Include="Symbols\advantage.png" />
+    <Resource Include="Symbols\boost.png" />
+    <Resource Include="Symbols\chalange.png" />
+    <Resource Include="Symbols\difficulty.png" />
+    <Resource Include="Symbols\dispair.png" />
+    <Resource Include="Symbols\failure.png" />
+    <Resource Include="Symbols\proficiency.png" />
+    <Resource Include="Symbols\setback.png" />
+    <Resource Include="Symbols\sucess.png" />
+    <Resource Include="Symbols\threat.png" />
+    <Resource Include="Symbols\triumph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GenesysGMerator\GenesysGMerator.csproj">
+      <Project>{934aa28b-65ef-4c7b-bcd5-10cb01a2993a}</Project>
+      <Name>GenesysGMerator</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Symbols\Characteristic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Symbols\1.png" />
+    <Resource Include="Symbols\2.png" />
+    <Resource Include="Symbols\3.png" />
+    <Resource Include="Symbols\4.png" />
+    <Resource Include="Symbols\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Symbols\architypes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Symbols\defense.png" />
+    <Resource Include="Symbols\Encomberence.png" />
+    <Resource Include="Symbols\soak.png" />
+    <Resource Include="Symbols\strain.png" />
+    <Resource Include="Symbols\Wounds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Symbols\skill_0.png" />
+    <Resource Include="Symbols\skill_1.png" />
+    <Resource Include="Symbols\skill_2.png" />
+    <Resource Include="Symbols\skill_3.png" />
+    <Resource Include="Symbols\skill_4.png" />
+    <Resource Include="Symbols\skill_5.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
