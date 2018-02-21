@@ -35,5 +35,11 @@ namespace GenesysGMeratorUI
             CharacterCreator charCreator = new CharacterCreator();
             charCreator.Show();
         }
+
+        private void GetFlavor_Click(object sender, RoutedEventArgs e)
+        {
+            GetFlavor flavor = new GetFlavor();
+            flavor.Show();
+        }
     }
 }

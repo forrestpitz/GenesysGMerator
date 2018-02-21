@@ -1,6 +1,7 @@
 ﻿namespace GenesysGMeratorUI
 {
     using GenesysGMerator.CharacterCreation;
+    using GenesysGMerator.Helpers;
     using Microsoft.Win32;
     using Newtonsoft.Json;
     using System;
@@ -119,6 +120,7 @@
 
             UpdateCharacteristics();
             Archetype.Content = arch.Name;
+            
 
             Career_Btn.IsEnabled = true;
             Brawn_Button.IsEnabled = true;
@@ -131,14 +133,19 @@
 
         private void UpdateCharacteristics()
         {
-            Brawn.Source = new BitmapImage(new Uri(string.Format(@"Symbols/{0}.png", character.Characteristics.Brawn), UriKind.Relative));
-            Agility.Source = new BitmapImage(new Uri(string.Format(@"Symbols/{0}.png", character.Characteristics.Agility), UriKind.Relative));
-            Intelect.Source = new BitmapImage(new Uri(string.Format(@"Symbols/{0}.png", character.Characteristics.Intelect), UriKind.Relative));
-            Cunning.Source = new BitmapImage(new Uri(string.Format(@"Symbols/{0}.png", character.Characteristics.Cunning), UriKind.Relative));
-            Willpower.Source = new BitmapImage(new Uri(string.Format(@"Symbols/{0}.png", character.Characteristics.Willpower), UriKind.Relative));
-            Presence.Source = new BitmapImage(new Uri(string.Format(@"Symbols/{0}.png", character.Characteristics.Presence), UriKind.Relative));
+            Brawn.Content = character.Characteristics.Brawn;
+            Agility.Content = character.Characteristics.Agility;
+            Intelect.Content = character.Characteristics.Intelect;
+            Cunning.Content = character.Characteristics.Cunning;
+            Willpower.Content = character.Characteristics.Willpower;
+            Presence.Content = character.Characteristics.Presence;
             XPBalance.Content = character.XPBalance;
             XPTotal.Content = character.XPToatal;
+            Wound_Current.Content = character.WoundsCurrent;
+            Wound_Threshold.Content = character.WoundThreshold;
+            Strain_Current.Content = character.StrainCurrent;
+            Strain_Threshold.Content = character.StrainCurrent;
+            Soak.Content = character.Characteristics.Brawn;
         }
 
         private void CareerSelector_Click(object sender, RoutedEventArgs e)
@@ -195,6 +202,19 @@
 
             character.XPBalance -= costOfNextPoint;
             character.Characteristics.GetType().GetProperty(characteristic).SetValue(character.Characteristics, charStat + 1);
+
+            if (characteristic == "Brawn")
+            {
+                character.WoundThreshold++;
+                character.WoundsCurrent++;
+            }
+
+            if (characteristic == "Willpower")
+            {
+                character.StrainCurrent++;
+                character.StrainThreshold++;
+            }
+
             UpdateCharacteristics();
         }
 
@@ -216,6 +236,18 @@
 
             character.XPBalance += costOfNextPoint;
             character.Characteristics.GetType().GetProperty(characteristic).SetValue(character.Characteristics, charStat - 1); ;
+
+            if (characteristic == "Brawn")
+            {
+                character.WoundThreshold--;
+                character.WoundsCurrent--;
+            }
+            if (characteristic == "Willpower")
+            {
+                character.StrainCurrent--;
+                character.StrainThreshold--;
+            }
+
             UpdateCharacteristics();
         }
 
@@ -351,6 +383,11 @@
             }
 
             return true;
+        }
+
+        private void GenerateName_Click(object sender, RoutedEventArgs e)
+        {
+            CharacterNameTB.Text = DomainDataHelper.GetName();
         }
     }
 }

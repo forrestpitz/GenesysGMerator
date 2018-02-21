@@ -67,8 +67,15 @@
     <Compile Include="CharacterCreator.xaml.cs">
       <DependentUpon>CharacterCreator.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Constants.cs" />
     <Compile Include="DiceRoller.xaml.cs">
       <DependentUpon>DiceRoller.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GetFlavor.xaml.cs">
+      <DependentUpon>GetFlavor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SoundEffects.xaml.cs">
+      <DependentUpon>SoundEffects.xaml</DependentUpon>
     </Compile>
     <Compile Include="Splash.xaml.cs">
       <DependentUpon>Splash.xaml</DependentUpon>
@@ -89,6 +96,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="GetFlavor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GM.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -101,6 +112,10 @@
       <DependentUpon>GM.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SoundEffects.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Splash.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

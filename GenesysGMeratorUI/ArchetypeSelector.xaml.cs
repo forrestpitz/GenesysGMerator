@@ -37,12 +37,12 @@
             {
                 if (arch.Name == (sender as ComboBox).SelectedItem as string)
                 {
-                    Brawn.Source = new BitmapImage(new Uri(string.Format(@"Symbols/{0}.png", arch.BaseCharacteristics.Brawn), UriKind.Relative));
-                    Agility.Source = new BitmapImage(new Uri(string.Format(@"Symbols/{0}.png", arch.BaseCharacteristics.Agility), UriKind.Relative));
-                    Intelect.Source = new BitmapImage(new Uri(string.Format(@"Symbols/{0}.png", arch.BaseCharacteristics.Intelect), UriKind.Relative));
-                    Cunning.Source = new BitmapImage(new Uri(string.Format(@"Symbols/{0}.png", arch.BaseCharacteristics.Cunning), UriKind.Relative));
-                    Willpower.Source = new BitmapImage(new Uri(string.Format(@"Symbols/{0}.png", arch.BaseCharacteristics.Willpower), UriKind.Relative));
-                    Presence.Source = new BitmapImage(new Uri(string.Format(@"Symbols/{0}.png", arch.BaseCharacteristics.Presence), UriKind.Relative));
+                    Brawn.Content = arch.BaseCharacteristics.Brawn;
+                    Agility.Content = arch.BaseCharacteristics.Agility;
+                    Intelect.Content = arch.BaseCharacteristics.Intelect;
+                    Cunning.Content = arch.BaseCharacteristics.Cunning;
+                    Willpower.Content = arch.BaseCharacteristics.Willpower;
+                    Presence.Content = arch.BaseCharacteristics.Presence;
 
                     this.selectedArchetype = arch;
                     break;

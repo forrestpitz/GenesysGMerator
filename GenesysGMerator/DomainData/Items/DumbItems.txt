@@ -1,0 +1,76 @@
+Wand of Create Wand - 1 charge, creates a Wand of Create Wand.
+Orb of Slope Detection - Place the orb somewhere you suspect there might be a slope and you can use it to discern the direction and approximate steepness of any slope there might be. May fail on extremely rough or sticky surfaces.
+Deck of 52 Things - As a Deck of Many Things, except the effect of each card is that the drawer gains possession of one of 52 nonmagical playing cards.
+Ring of Three Least Wishes - Ring that holds three charges of Least Wish, AKA Prestidigitation.
+Wand of Horse Missile - Launches tiny (about the size of a duck) horses. Wand comes with 100 charges.
+Tree Token, Feather - A tree which, on command, permanently turns into a feather.
+Bag of Withholding - As a Bag of Holding, but sentient and disinclined to let you take items out.
+Scroll of Rock to Rock - Turns a sedimentary rock into a metamorphic rock.
+Scroll of Detect Alignment - Allows you to discern the alignment of a block of text, i.e. left, right, centered, or justify.
+Placebo of Cure Light Wounds - The drinker believes that (s)he has healed 1d6 hit points.
+Scroll of Raise Dead - Levitates one corpse, as Levitate.
+Axe of the Dwarvish Lesser Nobility - As the Axe of the Dwarvish Lords, except not at all and it's actually just a normal axe that was owned by a member of the Dwarvish nobility.
+Orb of Dragon-kin - Has power over any non-dragon who self-identifies as a dragon.
+Wand of Stone Shape - Creates basic shapes such as circles, squares and triangles out of stone.
+Potion of Wakefulness - Allows the drinker to avoid fatigue due to lack of resting for several extra hours. Is actually coffee.
+Portable Whole - Any surface against which it is placed becomes whole and unbroken until it is removed.
+1.25-staff - A +1 quarterstaff.
+Scroll of Rock to Roll - Turns rocks into music.
+Wand of Wall of Mice - As Wall of Ice, but instead creates a swarm of mice in each space which would have been occupied by ice.
+Scroll of Protection from Gourd - Protects you from gourds.
+Everburning Torch - As a normal Everburning Torch except that it constantly insults the user, referring to its insults as "sick burns".
+Scroll of Deeper Dorkness - The target becomes an extreme dork.
+Bag of Ticks, Gray - As a Bag of Tricks, Gray but contains only ticks. These ticks have 1 hit point and basically can't hurt anything.
+Bag of Chicks, Gray - As a Bag of Tricks, Gray but contains only baby chickens.
+Wand of Launch Boat - Launches one boat as if fired from a crossbow. Unfortunately, crossbows are notoriously bad at firing boats.
+Bathrobe of the Archmagi - As a Robe of the Archmagi but with none of the cool powers because why would an Archmage need his cool robe powers when he's taking a bath.
+Everlasting Rations - So inedible that they last forever due to not being eaten.
+Scroll of Mud to Roc - Transmutes some mud into a roc, which is likely to try to eat you.
+Helm of Paradoxes - On command, prevents command word-activated items, including itself, from functioning for 1 round.
+Ring of Three Fishes - A ring with three charges of Summon Fish I.
+Arthur, Ring of the Britons - This sentient ring causes the wearer to speak in a British accent and use phrases such as "you wot mate" and "listen here you lil shit". The ring itself speaks in a posh, high-class British accent.
+Bag of Exploding Rings: A pouch containing 10-15 rings. The rings do not do anything and are enchanted with "Hide Magic" so detect magic will not work unless the user has a Spellcraft or Knowledge(magic) rating of 10+. When a blow is dealt to the ring, it explodes outward for 2d6 dmg. The wearer is only damaged if the ring was facing him.
+Sponge of Holding: A small sponge that acts like bag of holding, but for liquids only. Can contain up to 100L of liquids and maintains their temperature. Last in, first out. Will absorb any liquid it come into contact with, even moisture on skin.
+Cloak of Prestidigitation: A cloak which always bellows in the wind when the broach is locked.
+Sunrod: A 1ft stick that lights up for 1 hour when bent a little. Has a 20% chance to start singing "Walking on Sunshine" until destroyed.
+Lucemophobic Whoopee Cushion: A Whoopee Cushion that becomes ethereal and invisible when light is shown upon it. Refills with air automatically every 10 seconds.
+Crayon of Color Spray: When the tip is held with the fingers, it will leave streaks of a chosen color in the air as it moves.
+Ringing in my Ears: A little metal ball that will ring only when the holder's given name is mentioned somewhere in conversation.
+Copycat Quill: A quill that can suck up any ink and reuse it. When this ink is reused, the writing will look identical to that of the author. When 2 inks are combined, the quill explodes for 4d6 damage and coat the surroundings in black. REF14 negates damage.
+Key of Hope: A key that fits in any hole but cannot actually open it.
+Mirror of Recent Past: When looked upon, you see the face of the last person to have gazed.
+Dirty Copper Coin: A coin that when rubbed, polishes other metals around it in a 5ft radius. Always looks dirty.
+Lollipop of Dreadful Fate: Taste how you will die. Drown in the ocean? Salt. Sword to the belly? Blood, bile and steel. Swallowed by a giant toad? Toad saliva and flies.
+Paint of Misspelling: When it comes into contact with someone, any spell cast by them has one of its sounds in the name modified. EX: Stoneskin is now Sconeskin. Fireball is now Firebull. Sleep is now Sweep.
+Rod of Healing: The wielder must yell DIE and attack the target, dealing 1d6+STR damage and then healing them for 4d6+WIS.
+Jones Juice: When consumed, makes the drinker's voice sound like James Earl Jones for 1d4 hours.
+Broom Sword: A cocky sword that insists it's a broom. Is magically dull.
+Stone of the Meek: A stone that weighs more the stronger you are. Cannot be move by a dragon. Easily lifted above the head of an ant. A gnome can throw it so hard it will shatter a tree trunk, while an ogre will have a hard time throwing it 10ft.
+Pair of Coins: One always lands on heads, one always on tales. Always. If it is forced down upon its bad face, it will push with x+1 force where x is the force used on it. As long as it does not touch the ground, this effect does not occur.
+Selfish Seashell: A seashell that, when held to ones ears, asks the listener favors (like drink and chocolate) but never gives anything in return.
+Rod of Folding: When a ranged touch attack is done with this rod, it strips the target of all clothing and folds it neatly, laying it on the floor nearby.
+Signing Bass: A mounted bass that sings when someone passes in front of it.
+Fun Juice: Grog of Whimsical Curses.
+Slumber Sheep: A little plush sheet that if willingly squeezed, bawws and puts the user to sleep for 1d4 hours. WIL 15 save.
+Late to the BarBee: A boomerang that eventually returns… eventually. It performs an arc whose highest point takes 2d20 seconds to reach. Therefore, if thrown and a 40 is rolled, it will return to where it was launched 80 seconds later, dealing ½ of the seconds traveled as sonic damage to enemies of the thrower.
+Leaves: A tent that looks like a pile of leaves from the outside, but a spacious 6person tent on the inside. One must dive into the leaves to enter and exits from a hole at the top of the tent. It keeps warmth in, and weather out. If the leaves are kicked, PCs exit from the nearest pile of leaves which then becomes the tent.
+Belt of Levitation: When the command word RISE is spoken while the belt is locked, it will continue to steadily rise until it is unbuckled.
+Amulet of Willful Tears: When worn, allows the user to cry on command with a successful WIL12 check.
+Beggar's Anguish: A prank gold coin that will reappear in the users pocket/hand after 10 minutes if willfully given up. Must be stolen to get rid of it.
+Scroll of Sight: Cures blindness off of whoever reads this scroll.
+Buoyant Anchor: A heavy anchor that floats like foam on water.
+Cloak of Angel's Shadow: Makes the wearer's shadow appear to have large angelic wings.
+Action Figure: When pointed at a humanoid and the word Transmogriphy is spoken, will change to look like the mortal it is pointing at.
+Gloves of Anti-Ambidexterity: A pair of gloves. If 1 glove is worn, makes the opposite hand the wearer's main hand.
+Sundial of Relative Location: A sundial that shows the correct time when light is shown on it, even in bad weather or underground.
+Penguin Suit: When worn, shrinks down to look like a normal penguin. The wearer still feels normal and as if he was in a suit. Opening the zipper on the inside makes the penguin suit grow back to normal.
+Flute of Strings: When played, sounds like a guitar/lute.
+Donkey Tail of Shame: When pinned to the bottom of something's spine, causes -6 charisma. Cannot be removed for 1 hour. Has a 5% chance to paralyze the victim permanently...
+Ring of Heckling: When the wearer's hands are cupped to yell an insult, increase the Intimidation roll by +4.
+Not-so-magic Lamp: When rubbed, a Djinn appears. He will grant 3 wishes, but they do not actually happen. He assures the user that they did, though.
+Pacifist Scabbard: When a sword is sheathed inside, it will not relinquish it if the user is in combat. It will twist and say "NO! You just want to hurt people!"
+The Chillaxe: When this axe is held and the holder shouts CHILL, everyone who hears gains +4 Wis and ponders their motives for 10 seconds. If the axe successfully deters someone from their original decision, it turns to snow.
+Fork of Poultry: Anything eaten with this fork tastes like chicken. If the words TASTE CHANGE: X are spoken, the forks makes any food taste like X.
+Cloak of Bay: Whenever the cloak would receive any form of damage there is a 1% chance that it will explode. However, if the person wearing the cloak falls below zero hit points the chance of exploding raises to 80% and the wearer immediately makes a check to see if it explodes. The cloak explodes in a 20' x 20' area centered on the wearer and deals 5d6 points of fire damage.
+Disk of Moby: This circular black disk has a single small hole in the middle of it. If placed on the ground and spun forward or backward with your finger tips it makes a catchy scratching sound that resonates for 80'. Anyone in the radius of the Disk must make a Will save or immediately stop what their doing, turn toward the direction of the disk, and bob their head to the rhythm of the scratch sounds.
+The Blade of Wiffle: This elegant +2 Shortsword bears a yellow sheen to its nearly cylindrical blade. When struck with the blade the opponent takes an additional 1d6 points of non-lethal damage at the start of their next turn and looses all feeling in the part of the body struck for 1d3 minutes. This blade may also be used to reflect back small projectiles like arrows back to their owner by making a Reflex save equal to the attack roll of the projectile, but on your turn you must make a Will save or immediately drop the sword and run full speed away from the sword toward a chosen destination before making an elegant slide.
